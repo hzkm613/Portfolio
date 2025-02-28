@@ -1,12 +1,16 @@
+import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
+import Loading from "./Components/Loading";
+const Home = React.lazy(() => import("./Pages/Home"));
 
 function App() {
   return (
     <div className="w-screen h-screen">
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }

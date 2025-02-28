@@ -1,22 +1,16 @@
 @import "tailwindcss";
 
-.racing-sans-one-regular {
-    font-family: "Racing Sans One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .rubik-regular {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+.chango-regular {
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .jetbrains-mono-regular {
-    font-family: "JetBrains Mono", monospace;
+
+  .atkinson-hyperlegible-mono-regular {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
   }
   
