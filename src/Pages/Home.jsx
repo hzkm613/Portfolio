@@ -1,5 +1,6 @@
-import React, { useState, lazy } from "react";
+import React, { useState, lazy, useLayoutEffect } from "react";
 import Loading from "../Components/Loading";
+import gsap from "gsap";
 
 const Scene = lazy(() => import("../Components/Scene"));
 
@@ -12,13 +13,32 @@ const Home = () => {
     }, 1800);
   };
 
+  useLayoutEffect(() => {
+    if (isModelLoaded) {
+      let context = gsap.context(() => {
+        const timeline = gsap.timeline();
+
+        timeline
+          .set(["#scene", "#intro"], { opacity: 0, y: "+=30" })
+          .to(["#scene", "#intro"], {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power4.out",
+            stagger: 0,
+          });
+      });
+      return () => context.revert();
+    }
+  }, [isModelLoaded]);
+
   return (
     <div className="relative w-screen h-screen bg-[#414eff] overflow-hidden">
       {/* loading screen*/}
       {!isModelLoaded && <Loading />}
 
       {/* 3D Model */}
-      <Scene setIsModelLoaded={handleModelLoad} />
+      <Scene id="scene" setIsModelLoaded={handleModelLoad} />
 
       {/* Intro */}
       {isModelLoaded && (
