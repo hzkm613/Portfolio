@@ -53,7 +53,7 @@ const Home = () => {
               <span className="inline-block racing-sans-one-regular text-6xl font-bold mb-2 tracking-wider">
                 Hi!👋
               </span>
-              <p className="atkinson-hyperlegible-mono-regular text-lg leading-8">
+              <p className="atkinson-hyperlegible-mono-regular text-lg leading-8 tracking-[-0.03em]">
                 I’m Hyunjin Kim, a front-end developer who loves design and
                 creative work. <br /> I’m passionate about crafting engaging
                 user experiences and bringing ideas to life through code. I
