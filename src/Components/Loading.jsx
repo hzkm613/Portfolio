@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Hourglass from "../Assets/Images/hourglass.gif";
+import Hourglass from "../assets/Images/hourglass.gif";
 import gsap from "gsap";
 
 const Loading = () => {
