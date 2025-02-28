@@ -29,7 +29,7 @@ const Loading = () => {
 
   return (
     <div className="absolute top-0 right-0 bg-[#414eff] w-full h-full flex flex-col items-center justify-center z-50 cursor-wait">
-      <img src={Hourglass} alt="Hourglass icon" className="w-12 h-12 mb-4" />
+      <img src={Hourglass} alt="Hourglass icon" className="w-12 h-13 mb-4" />
       <p
         id="loading"
         className="atkinson-hyperlegible-mono-regular text-center text-white text-xl"

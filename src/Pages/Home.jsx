@@ -7,6 +7,9 @@ const Scene = lazy(() => import("../Components/Scene"));
 
 const Home = () => {
   const [isModelLoaded, setIsModelLoaded] = useState(false);
+  const screenSize = useScreenSize();
+  const largeScreen = 1024;
+
   const handleModelLoad = () => {
     setTimeout(() => {
       setIsModelLoaded(true);
@@ -14,7 +17,7 @@ const Home = () => {
   };
 
   useLayoutEffect(() => {
-    if (isModelLoaded) {
+    if (isModelLoaded && largeScreen >= screenSize.width) {
       let context = gsap.context(() => {
         const timeline = gsap.timeline();
         timeline
@@ -30,7 +33,7 @@ const Home = () => {
       return () => context.revert();
     }
   }, [isModelLoaded]);
-  const screenSize = useScreenSize();
+
   return (
     <div className="relative w-screen h-screen bg-[#414eff] overflow-hidden">
       {/* loading screen*/}
@@ -40,7 +43,7 @@ const Home = () => {
       {/* <Scene id="scene" setIsModelLoaded={handleModelLoad} /> */}
 
       {/* Intro */}
-      {isModelLoaded && screenSize.width < 1024 ? (
+      {isModelLoaded && screenSize.width <= largeScreen ? (
         <Alert /> // Show Alert on screens smaller than 768px
       ) : (
         <>
