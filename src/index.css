@@ -1,11 +1,17 @@
 @import "tailwindcss";
 
-.chango-regular {
+/* .chango-regular {
   font-family: "Chango", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
   .atkinson-hyperlegible-mono-regular {
     font-family: "Atkinson Hyperlegible Mono", sans-serif;
@@ -13,4 +19,6 @@
     font-weight: 400;
     font-style: normal;
   }
+  
+
   

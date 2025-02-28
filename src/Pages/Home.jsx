@@ -50,7 +50,7 @@ const Home = () => {
             className="absolute top-0 right-0 w-2/5 h-full flex items-center pl-20 pr-35"
           >
             <div className="text-white">
-              <span className="inline-block chango-regular text-5xl font-bold mb-2">
+              <span className="inline-block racing-sans-one-regular text-6xl font-bold mb-2 tracking-wider">
                 Hi!👋
               </span>
               <p className="atkinson-hyperlegible-mono-regular text-lg leading-8">
