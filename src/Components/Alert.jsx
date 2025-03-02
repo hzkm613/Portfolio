@@ -13,6 +13,7 @@ const Alert = () => {
       <p>
         Current device: <b>{screenSize.width}px</b>
       </p>
+      <p>Currently working on mobile devices</p>
     </div>
   );
 };
