@@ -1,8 +1,34 @@
-# React + Vite
+# 💀 Hyunjin Kim Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Check out the website here!](https://hyunjinkim-portfolio.vercel.app/)
+ Date: Feb 26, 2025
 
-Currently, two official plugins are available:
+ ---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📌 **Overview:**
+This project is a personal portfolio website developed using React and Spline. The website showcases a creative and interactive experience, leveraging 3D model to enhance user engagement.
+
+ ---
+ 
+🎮 **Tech Stack & Tools:**
+- React
+- Tailwind CSS
+- GSAP
+- Spline
+- Vercel
+
+ ---
+ 
+🔑 **Key Features:**
+
+- **3D Interactive Keyboard:**
+The homepage features a custom 3D-modeled keyboard created with Spline. Each key on the keyboard serves as an interactive element.
+
+- **GSAP**
+GSAP is used to create smooth, high-performance animations.
+
+- **Responsive Design:**
+The website will be optimized for all devices, ensuring an intuitive and visually appealing experience on desktops, tablets, and smartphones.
+
+- **Hosted on Vercel:**
+The website is hosted on Vercel, offering fast and reliable performance with seamless deployment and automatic scaling.
