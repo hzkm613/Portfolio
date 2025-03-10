@@ -26,7 +26,7 @@ This project is a personal portfolio website developed using React and Spline. T
 - **3D Interactive Keyboard:**
 The homepage features a custom 3D-modeled keyboard created with Spline. Each key on the keyboard serves as an interactive element.
 
-- **GSAP**
+- **GSAP**:
 GSAP is used to create smooth, high-performance animations.
 
 - **Responsive Design:**
