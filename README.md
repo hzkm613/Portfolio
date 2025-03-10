@@ -1,6 +1,6 @@
 # 💀 Hyunjin Kim Portfolio Website
 
-[Check out the website here!](https://hyunjinkim-portfolio.vercel.app/)
+[Check out the website here!](https://hyunjinkim-portfolio.vercel.app/) <br />
  Date: Feb 26, 2025
 
  ---
